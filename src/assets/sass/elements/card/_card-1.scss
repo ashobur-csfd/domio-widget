@@ -1,0 +1,46 @@
+.cdx-card-1 {
+    padding: 50px;
+    background: hsl(var(--off-white));
+    transition: var(--transition);
+
+    @media #{$md} {
+        padding: 30px;
+    }
+
+    .cdx-card-title {
+        color: hsl(var(--dark));
+        transition: var(--transition);
+        @media #{$sm} {
+            text-align: center;
+        }
+    }
+
+    .cdx-content {
+        display: flex;
+        justify-content: flex-end;
+        @media #{$sm} {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .cdx-text {
+            color: hsl(var(--dark));
+
+            transition: var(--transition);
+            display: inline-flex;
+            flex-direction: column;
+        }
+    }
+
+    &:hover {
+        background: hsl(var(--dark));
+        .cdx-card-title {
+            color: hsl(var(--white));
+        }
+        .cdx-content {
+            .cdx-text {
+                color: hsl(var(--white));
+            }
+        }
+    }
+}

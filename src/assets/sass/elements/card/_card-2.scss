@@ -1,0 +1,122 @@
+.cdx-card-2 {
+    background: hsl(var(--off-white));
+    border-radius: 0px 10px 0px 0px;
+    padding: 60px 85px 25px 60px;
+    max-width: 780px;
+
+    @media #{$xl} {
+        padding: 30px;
+    }
+    @media #{$sm} {
+        padding: 20px;
+    }
+
+    .cdx-starts {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 8px 16px;
+        border: 1px solid hsl(var(--dark) / 0.2);
+        border-radius: 30px;
+        margin-bottom: 25px;
+
+        @media #{$md} {
+            margin-bottom: 16px;
+        }
+        .cdx-icon,
+        svg {
+            color: hsl(var(--primary));
+            fill: hsl(var(--primary));
+            font-size: 14px;
+            width: 14px;
+            display: inline-flex;
+        }
+    }
+
+    .cdx-card-desc {
+        color: hsl(var(--dark));
+        font-family: $font-instrument-sans;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 44px;
+
+        @media #{$xl} {
+            font-size: 20px;
+            line-height: 36px;
+        }
+        @media #{$sm} {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    .cdx-author-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+
+        @media #{$md} {
+            margin-top: 16px;
+            gap: 10px;
+        }
+
+        .cdx-author-name {
+            color: hsl(var(--dark));
+            font-family: $font-instrument-sans;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+            @media #{$xs} {
+                font-size: 16px;
+            }
+        }
+        .cdx-author-position {
+            color: hsl(var(--dark) / 0.8);
+            font-family: $font-instrument-sans;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media #{$xs} {
+                font-size: 14px;
+            }
+        }
+
+        .cdx-author-thumb {
+            border-radius: 100px;
+            width: 106px;
+            height: 80px;
+            flex-shrink: 0;
+            position: relative;
+
+            .cdx-thumb {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            @media #{$xs} {
+                width: 60px;
+                height: 50px;
+            }
+        }
+        .cdx-quote-icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: hsl(var(--dark));
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid hsl(var(--off-white));
+
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@@include('../partials/_templateTop.html', { "bodyClass": "" })
+<!-- HEADER 1   -->
+@@include('../partials/header/header-1.html' )
+<main class="main">
+    <section class="cdx-blog-area">
+        <div class="container-xxxl">
+            <div class="row gy-5 g-sm-3 justify-content-between">
+                <!-- LEFT SIDE BLOG HEAD -->
+                <div class="col-sm-4 col-xxl-3">
+                    <div class="cdx-sticky-sidebar">
+                        <h2 class="cdx-sticky-title">Latest Articles the Domio!</h2>
+                        <p class="cdx-sticky-desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy.
+                        </p>
+                    </div>
+                </div>
+                <!-- RIGHT SIDE BLOG -->
+                <div class="col-sm-8">
+                    <div class="row g-4">
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "Living Architecture Designing Spaces for a Better Future.", i: "1" })
+                        </div>
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "The Enduring Appeal of Classic Interior Design.", i: "2" })
+                        </div>
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "The Rise of Classic Interior Aesthetics.", i: "3" })
+                        </div>
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "Living Architecture Designing Spaces for a Better Future.", i: "4" })
+                        </div>
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "Exploring the Intersection of Art and Structure.", i: "5" })
+                        </div>
+                        <!-- BLOG -->
+                        <div class="col-xl-6">
+                            @@include('../partials/blog/_blog-3.html', { h: "The Role of AI and Robotics in Modern Construction.", i: "6" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('../partials/_templateBottom.html')

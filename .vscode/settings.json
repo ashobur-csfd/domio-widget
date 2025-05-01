@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5501,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.insertFinalNewline": false,
+        "files.removeFinalNewlines": true,
+        "files.trimFinalNewlines": false,
+        "files.trimTrailingWhitespace": true
+    }
+}

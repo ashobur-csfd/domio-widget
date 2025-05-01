@@ -1,0 +1,39 @@
+.cdx-card-3 {
+    border-bottom: 1px solid hsl(var(--dark) / 0.2);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+
+    @media #{$xs} {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cdx-card-content {
+        max-width: 700px;
+
+        @media #{$md} {
+            max-width: 60%;
+        }
+        @media #{$xs} {
+            max-width: 100%;
+            order: 2;
+        }
+    }
+    .cdx-card-image {
+        max-width: 570px;
+        @media #{$md} {
+            max-width: 40%;
+        }
+        @media #{$xs} {
+            max-width: 100%;
+            order: 1;
+        }
+    }
+}
+
+// service
+.cdx-service-area {
+    border-top: 1px solid hsl(var(--dark) / 0.4);
+}

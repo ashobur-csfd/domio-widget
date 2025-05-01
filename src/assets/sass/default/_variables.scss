@@ -1,0 +1,58 @@
+/*=========================
+    Variables 
+==========================*/
+:root {
+    --transition: all 0.5s;
+
+    // primary
+    --primary-h: 39;
+    --primary-s: 70%;
+    --primary-s-2: 100%;
+    --primary-l: 50%;
+    --primary-l-2: 72%;
+    --primary: var(--primary-h) var(--primary-s) var(--primary-l);
+    --primary-2: var(--primary-h) var(--primary-s-2) var(--primary-l-2);
+    --primary-gradient: linear-gradient(125deg, hsl(var(--primary)), hsl(var(--primary-2)));
+    --primary-gradient-reverse: linear-gradient(125deg, hsl(var(--primary-2)), hsl(var(--primary)));
+
+    /* dark color #222 */
+    // hsla(0, 0%, 13%, 1)
+    --dark-h: 0;
+    --dark-s: 0%;
+    --dark-l: 13%;
+    --dark: var(--dark-h) var(--dark-s) var(--dark-l);
+
+    /* dark 2 color #0C1A1A */
+    --dark-2-h: 180;
+    --dark-2-s: 36%;
+    --dark-2-l: 7%;
+    --dark-2: var(--dark-2-h) var(--dark-2-s) var(--dark-2-l);
+
+    /* off-white 2 color # */
+    // hsla(42, 56%, 92%, 1)
+    --off-white-h: 42;
+    --off-white-s: 56%;
+    --off-white-l: 92%;
+    --off-white: var(--off-white-h) var(--off-white-s) var(--off-white-l);
+
+    // white color #ffffff
+    --white-h: 0;
+    --white-s: 0%;
+    --white-l: 100%;
+    --white: var(--white-h) var(--white-s) var(--white-l);
+
+    --image-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(86deg) brightness(107%) contrast(101%);
+    --image-gray: brightness(0) saturate(100%) invert(35%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(100%) contrast(91%);
+    --image-primary: brightness(0) saturate(100%) invert(81%) sepia(28%) saturate(4333%) hue-rotate(347deg) brightness(93%) contrast(82%);
+    --image-dark: brightness(0) saturate(100%) invert(0%) sepia(91%) saturate(417%) hue-rotate(232deg) brightness(90%) contrast(93%);
+}
+
+// Layouts Variation
+$xxxl: "only screen and (min-width: 1921px)";
+$xxl: "only screen and (max-width: 1599px)";
+$xl: "only screen and (max-width: 1400px)";
+$lg: "only screen and (max-width: 1199px)";
+$md: "only screen and (max-width: 991px)";
+$sm: "only screen and (max-width: 768px)";
+$xs: "only screen and (max-width: 575px)";
+$xxs: "only screen and (max-width: 390px)";

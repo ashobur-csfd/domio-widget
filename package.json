@@ -1,0 +1,40 @@
+{
+    "name": "domio",
+    "version": "0.01",
+    "description": "domio-test",
+    "main": "index.js",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "dev": "gulp watch",
+        "format": "prettier --write \"**/*.html\" --ignore-path .prettierignoreCMD",
+        "gulp-build": "gulp build",
+        "vercel": "vercel --prod",
+        "build": "npm run format && npm run gulp-build",
+        "deploy": "npm run format && npm run vercel"
+    },
+    "dependencies": {
+        "browser-sync": "^2.29.3",
+        "child_process": "^1.0.2",
+        "fs": "^0.0.1-security",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssbeautify": "^3.0.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.1.4",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "sass": "^1.62.1"
+    },
+    "devDependencies": {
+        "del": "^6.1.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.0",
+        "prettier": "^3.5.3"
+    }
+}

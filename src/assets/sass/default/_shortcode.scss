@@ -1,0 +1,56 @@
+/*--------------------------------------------
+* Utilities
+--------------------------------------------*/
+// Instrument+Sans
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+$font-instrument-sans: "Instrument Sans", sans-serif;
+$font-beatrice-trial: "Beatrice Trial", sans-serif;
+$font-basis-grotesque-arabic-pro: "Basis Grotesque Arabic Pro", sans-serif;
+$fonts: (
+    "Beatrice Trial": (
+        300: "../web-fonts/beatrice-trial/300.otf",
+        400: "../web-fonts/beatrice-trial/400.otf",
+        500: "../web-fonts/beatrice-trial/500.otf",
+        600: "../web-fonts/beatrice-trial/600.otf",
+        700: "../web-fonts/beatrice-trial/700.otf",
+        800: "../web-fonts/beatrice-trial/800.otf",
+        900: "../web-fonts/beatrice-trial/900.otf"
+    ),
+    "Basis Grotesque Arabic Pro": (
+        300: "../web-fonts/bs-arabic-pro/300.ttf",
+        400: "../web-fonts/bs-arabic-pro/400.ttf",
+        500: "../web-fonts/bs-arabic-pro/500.ttf",
+        700: "../web-fonts/bs-arabic-pro/700.ttf",
+        900: "../web-fonts/bs-arabic-pro/900.ttf"
+    )
+);
+
+@mixin load-fonts($fonts) {
+    @each $family, $weights in $fonts {
+        @each $weight, $path in $weights {
+            @font-face {
+                font-family: "#{$family}";
+                font-style: normal;
+                font-weight: $weight;
+                font-display: swap;
+                src: url("#{$path}") format("opentype");
+            }
+        }
+    }
+}
+
+@include load-fonts($fonts);
+
+/* Example usage */
+.cdx-font-instrument {
+    font-family: $font-instrument-sans;
+}
+
+.cdx-font-beatrice {
+    font-family: $font-beatrice-trial;
+}
+
+.cdx-font-bs-arabic {
+    font-family: $font-basis-grotesque-arabic-pro;
+}
